@@ -20,6 +20,8 @@ function motivationalSpeaker () {
   return quoteOfTheDay;
 };
 
-console.log(motivationalSpeaker());
+process.stdout.write('Some motivation is coming your way. Ready? ');
+
+process.stdin.on('data', (userInput) => {console.log(motivationalSpeaker())});
 
 
